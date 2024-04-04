@@ -1,17 +1,27 @@
 body{
-    margin: o;
+    margin: 0;
+    padding:0;
     font-family: Arial, Helvetica, sans-serif;
-}
+    }
+h4{
+    color:#5ED3E7;
+    }
+
+@font-face {
+    font-family: "porterSans";
+    src: url("../Assets/RedPlanetVentures/Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.ttf");
+    }
+
 
     .topNav{
-        width: 100%;
+        width: 96%;
         height: 90px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: #5b7575;
-        padding: 0 3em;
+        background-color: #cccece;
+        padding: 0 2%;
         border-radius:20px;
     }
     
@@ -19,3 +29,228 @@ body{
     .navFlex a{
         padding: 15px;
     }
+
+    .search{
+        display:flex;
+        align-items: center;
+        margin-right: 0;
+        margin-left:53em;
+    }
+
+    .search form{
+        display: flex;
+        margin:0;
+    }
+
+    .search input{
+        padding: 10px;
+        border: 1px solid #8b8b8b;
+        outline: none;
+        border-radius: 5px;
+        margin-right: 18px;
+        font-size: 10px;
+    }
+
+    .HeaderCon{
+        background-image: url("../assets/RedPlanetVentures/Assets/Images/homePageHeader.png");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex; 
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .HeaderText h1{
+        padding: 5%;
+        font-family: "porterSans";
+        color: red;
+        font-size: xx-large;
+    }
+
+    .HeaderText h3{
+        padding: 5%;
+        color:#3C0062;
+    }
+
+    .flightHeaderCon{
+        background-image: url("../assets/RedPlanetVentures/Assets/Images/headerbackBack.png");
+        height: 35vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex; 
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+.flightHeaderText H1{
+    font-family: "porterSans";
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 50px 30px;
+}
+
+.contactHeaderCon{ background-image: url("../assets/RedPlanetVentures/Assets/Images/headerbackBack.png");
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.contactHeaderText{
+    font-family: "porterSans";
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 60px 30px;    
+}
+
+.FeaturedCon{
+    display: flex;
+    background-color: #3C0062;
+    height: 90vh;
+    padding: 5vh;
+    color: #FFFFFF;
+}
+
+.Left{
+    width: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width:40%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+button{
+    width: 200px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button2{
+    width: 200px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3c0062;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button3{
+    width: 200px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: #01f3fc;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button4{
+    width: 200px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(129, 0, 0);
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.shuttleCon{
+    display: flex;
+    height: 90vh;
+    padding: 5vh;
+}
+
+.UpcomingCon {
+    background-color: #3c0062;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .IndTrip {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .Trips {
+    display: flex;
+  }
+
+  .marsCon{
+    display: flex;
+    height: 90vh;
+    padding: 5vh;
+}
+
+.flightLeft{
+    width: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flightRight{
+    width:40%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.neptuneCon{
+    display: flex;
+    background-color: #3C0062;
+    height: 90vh;
+    padding: 5vh;
+    color: #FFFFFF;
+}
+
+.footer{
+    display: flex;
+}
+
+.first{
+    text-align: center;
+    margin: 20px;
+}
+
+.Condtions{
+    display: flex;
+}/* Nav bar
+    header text
+    arrows on image
+    text color by shuttles
+    footer
+    contact page
+    signup and address
+    flights page
+    filter bar 
+    button
