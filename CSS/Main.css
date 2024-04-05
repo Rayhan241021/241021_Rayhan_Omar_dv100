@@ -12,6 +12,10 @@ h4{
     src: url("../Assets/RedPlanetVentures/Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.ttf");
     }
 
+nav{
+    width:92%;
+    align-self: center;
+}
 
     .topNav{
         width: 96%;
@@ -23,6 +27,7 @@ h4{
         background-color: #cccece;
         padding: 0 2%;
         border-radius:20px;
+        margin-top: 2%;
     }
     
     
@@ -34,7 +39,6 @@ h4{
         display:flex;
         align-items: center;
         margin-right: 0;
-        margin-left:53em;
     }
 
     .search form{
@@ -61,15 +65,18 @@ h4{
         flex-direction: column;
     }
 
-    .HeaderText h1{
+    .headerText{
+       align-self: flex-start;
         padding: 5%;
+    }
+
+    .HeaderText h1{
         font-family: "porterSans";
         color: red;
         font-size: xx-large;
     }
 
     .HeaderText h3{
-        padding: 5%;
         color:#3C0062;
     }
 
@@ -117,8 +124,8 @@ h4{
     color: #FFFFFF;
 }
 
-.Left{
-    width: 50;
+.left{
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,6 +137,10 @@ h4{
     justify-content: center;
     flex-direction: column;
     padding: 0 5%;
+}
+
+.purpleHeading h2{
+    color:#3C0062;
 }
 
 button{
@@ -235,6 +246,7 @@ button4{
 
 .footer{
     display: flex;
+    justify-content: space-between;
 }
 
 .first{
@@ -242,9 +254,84 @@ button4{
     margin: 20px;
 }
 
+.second{
+    text-align: center;
+}
+
+.featuredConImage{
+    background-image: url('../Assets/RedPlanetVentures/Assets/Images/marsSliderClipped1.png');
+height: 100%;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+}
 .Condtions{
     display: flex;
-}/* Nav bar
+}
+
+.viewCartButton{
+    align-self: flex-end;
+}
+
+.buttonCon{
+    display: flex;
+}
+
+.ContactUs{
+    display: flex;
+    padding: 5%;
+}
+
+.ContactLeft{
+    width: 50%;
+}
+.SignUpSheet{
+    width: 50%;
+}
+
+.SocialMedia{
+    height: 20%;
+}
+
+.LocationCon{
+    height: 80%;
+    margin: 20px;
+}
+
+.SendMesCon{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url('../Assets/RedPlanetVentures/Assets/Images/formBack.png');
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 10%;
+    color: white;
+}
+
+.SendMesCon input{
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+.SendMesCon textarea{
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+
+/* Nav bar
     header text
     arrows on image
     text color by shuttles
