@@ -73,7 +73,7 @@ nav{
     .HeaderText h1{
         font-family: "porterSans";
         color: red;
-        font-size: xx-large;
+        font-size: 60px;
     }
 
     .HeaderText h3{
@@ -204,6 +204,7 @@ button4{
     flex-direction: column;
     justify-content: center;
     color: white;
+    text-align: center;
   }
   
   .IndTrip {
@@ -304,6 +305,10 @@ padding: 15px;
     margin: 20px;
 }
 
+.LocationCon h2{
+    color:#3C0062;
+}
+
 .SendMesCon{
     height: 100%;
     display: flex;
@@ -314,7 +319,7 @@ padding: 15px;
     background-size: 110%;
     background-repeat: no-repeat;
     border-radius: 20px;
-    padding: 10%;
+    padding: 0 10%;
     color: white;
 }
 
@@ -330,14 +335,23 @@ padding: 15px;
     padding: 15px;
 }
 
+.filter{
+    background-color: #3C0062;
+    display: flex;
+    padding-left: 100px;
+    color:white;
+}
 
+.filterBar{
+    display: flex;;
+}
+
+.show{
+    padding-left: 900px;
+}
 /* Nav bar
     header text
-    arrows on image
-    text color by shuttles
     footer
     contact page
-    signup and address
     flights page
     filter bar 
-    button
