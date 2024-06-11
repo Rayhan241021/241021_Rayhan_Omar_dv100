@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
     <header class="flightHeaderCon">
-        <nav>
-            <div class="topNav">
-
-             <div class="navFlex"><img src="../Assets/RedPlanetVentures/Assets/Images/logo.png" width="300px"></div>
-             <div class="navFlex">
-                 <a   href="../index.html">Home</a>
-                 <a href="../Pages/contact.html">Contact</a>
-                 <a class="active"href="Pages/flights.html">Flights</a>
-             </div>
-             <div class="search">
-                <form id="search">
-                    <fieldset>
-                        <input placeholder="search" type="text">
-                    </fieldset>
-                </form> </div>
-            </div>
-        </nav>
-             <div class="flightHeaderText">
-                 <h1>Book a Flight</h1>
-            </div>
-  </header>
-
-<section class="filter">
-    <div class="filterBar">
-        <div class="filter"><p>Filter</p><p>Showing 1–16 of 32 results</p></div>
-        <div class="show"><p>Show 6 Short by Default</p>
+      <nav>
+        <div class="topNav">
+          <div class="navFlex">
+            <img
+              src="../Assets/RedPlanetVentures/Assets/Images/logo.png"
+              width="300px"
+            />
+          </div>
+          <div class="navFlex">
+            <a href="../index.html">Home</a>
+            <a href="../Pages/contact.html">Contact</a>
+            <a class="active" href="Pages/flights.html">Flights</a>
+          </div>
+          <div class="search">
+            <form id="search">
+              <fieldset>
+                <input placeholder="search" type="text" />
+              </fieldset>
+            </form>
+          </div>
         </div>
-    </div>
-</section>
+      </nav>
+      <div class="flightHeaderText">
+        <h1>Book a Flight</h1>
+      </div>
+    </header>
 
-<section class="marsCon">
-    <div class="flightLeft">
+    <section class="filter">
+      <div class="filterBar">
+        <div class="filter">
+          <p>Filter</p>
+          <p>Showing 1–16 of 32 results</p>
+        </div>
+        <div class="show"><p>Show 6 Short by Default</p></div>
+      </div>
+    </section>
+
+    <div id="flightsContainer"></div>
+
+    <section class="marsCon">
+      <div class="flightLeft">
         <img
           src="../Assets/RedPlanetVentures/Assets/Images/flightMars.png"
           height="100%"
@@ -50,22 +59,24 @@
         <h3>R 25,000.00 <s>R50,000.00</s></h3>
         <h5>36 customer review</h5>
         <p>
-            Embark on a Mars vacation: red deserts, ancient relics, and towering
-            canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons, and
-            stargazing under Phobos and Deimos. Unforgettable adventures beckon
-            on the rust-colored landscapes of the Red Planet.
+          Embark on a Mars vacation: red deserts, ancient relics, and towering
+          canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons,
+          and stargazing under Phobos and Deimos. Unforgettable adventures
+          beckon on the rust-colored landscapes of the Red Planet.
         </p>
         <div class="buttonCon">
-        <button2>- 1 +</button2>  <button>Book Now</button></div>
-            <h5>SKU: SS001</h5>
-            <h5>Shuttle: The Opulence</h5>
-            <h5>Tags: Mars, Luxury, Sale </h5>
-            <h5>Date : 16 June - 19 July</h5>
+          <button2>- 1 +</button2>
+          <button onclick="marsAddToCart()">Book Now</button>
+        </div>
+        <h5>SKU: SS001</h5>
+        <h5>Shuttle: The Opulence</h5>
+        <h5>Tags: Mars, Luxury, Sale</h5>
+        <h5>Date : 16 June - 19 July</h5>
       </div>
-</section>
+    </section>
 
-<section class="neptuneCon">
-    <div class="flightLeft">
+    <section class="neptuneCon">
+      <div class="flightLeft">
         <img
           src="../Assets/RedPlanetVentures/Assets/Images/flightNeptune.png"
           height="100%"
@@ -76,20 +87,24 @@
         <h4>R 45,000.00</h4>
         <h5>24 customer review</h5>
         <p>
-            Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness
-            surreal vistas of swirling clouds and rings. Experience weightlessness and explore frigid oceans. Engage in thrilling spacewalks, observe celestial phenomena, and savor gourmet space cuisine. An unforgettable
-            adventure awaits, blending luxury with cosmic exploration.
+          Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness
+          surreal vistas of swirling clouds and rings. Experience weightlessness
+          and explore frigid oceans. Engage in thrilling spacewalks, observe
+          celestial phenomena, and savor gourmet space cuisine. An unforgettable
+          adventure awaits, blending luxury with cosmic exploration.
         </p>
         <div class="buttonCon">
-        <button3>- 1 +</button3>  <button>Book Now</button></div>
-            <h5>SKU: SS405</h5>
-            <h5>Shuttle: The Voyager</h5>
-            <h5>Neptune: Commercial, Gourmet Experience </h5>
-            <h5>Date: 4 April - 28 March</h5>
+          <button3>- 1 +</button3>
+          <button onclick="neptuneAddToCart()">Book Now</button>
+        </div>
+        <h5>SKU: SS405</h5>
+        <h5>Shuttle: The Voyager</h5>
+        <h5>Neptune: Commercial, Gourmet Experience</h5>
+        <h5>Date: 4 April - 28 March</h5>
       </div>
-</section>
-<section class="marsCon">
-    <div class="flightLeft">
+    </section>
+    <section class="marsCon">
+      <div class="flightLeft">
         <img
           src="../Assets/RedPlanetVentures/Assets/Images/flightJupiter.png"
           height="100%"
@@ -97,26 +112,27 @@
       </div>
       <div class="flightRight">
         <h1>The Giant’s Journey</h1>
-        <h3>R 65,000.00 </h3>
+        <h3>R 65,000.00</h3>
         <h5>48 customer review</h5>
         <p>
-            Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its
-            majestic storms and swirling atmosphere. Dive into metallic hydrogen
-            oceans. Explore its moons, each a world unto itself. Engage in gravity
-            surfing, comet chasing, and space excursions. Experience cosmic wonder
-            in luxury, blending exploration with adventure.
+          Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its
+          majestic storms and swirling atmosphere. Dive into metallic hydrogen
+          oceans. Explore its moons, each a world unto itself. Engage in gravity
+          surfing, comet chasing, and space excursions. Experience cosmic wonder
+          in luxury, blending exploration with adventure.
         </p>
         <div class="buttonCon">
-            <button2>- 1 +</button2>  <button>Book Now</button></div>
-            <h5>SKU: SS606</h5>
-            <h5>Shuttle: The Odyssey </h5>
-            <h5>Tags: Jupiter, Luxury, Adventure </h5>
-            <h5>Date :  15 June - 30 July</h5>
+          <button2>- 1 +</button2> <button onclick="jupiterAddToCart()">Book Now</button>
+        </div>
+        <h5>SKU: SS606</h5>
+        <h5>Shuttle: The Odyssey</h5>
+        <h5>Tags: Jupiter, Luxury, Adventure</h5>
+        <h5>Date : 15 June - 30 July</h5>
       </div>
-</section>
+    </section>
 
-<section class="neptuneCon">
-    <div class="flightLeft">
+    <section class="neptuneCon">
+      <div class="flightLeft">
         <img
           src="../Assets/RedPlanetVentures/Assets/Images/flightSaturn.png"
           height="100%"
@@ -127,20 +143,26 @@
         <h4>R 40,000.00</h4>
         <h5>16 customer review</h5>
         <p>
-            Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer."
-            Marvel at its iconic rings and turbulent storms. Explore its diverse moons, from icy Enceladus to mysterious Titan, with activities including rover expeditions and cave exploration. Experience the wonders of the cosmos amidst luxurious accommodations, where the thrill of discovery intertwines seamlessly with the excitement of adventure.
+          Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer."
+          Marvel at its iconic rings and turbulent storms. Explore its diverse
+          moons, from icy Enceladus to mysterious Titan, with activities
+          including rover expeditions and cave exploration. Experience the
+          wonders of the cosmos amidst luxurious accommodations, where the
+          thrill of discovery intertwines seamlessly with the excitement of
+          adventure.
         </p>
         <div class="buttonCon">
-            <button3>- 1 +</button3>  <button>Book Now</button></div>
-            <h5>SKU: SS333</h5>
-            <h5>Shuttle: The Explorer</h5>
-            <h5>Neptune: Saturn, Luxury, Adventure </h5>
-            <h5>Date: 4 April - 28 March</h5>
+          <button3>- 1 +</button3> <button onclick="saturnAddToCart()">Book Now</button>
+        </div>
+        <h5>SKU: SS333</h5>
+        <h5>Shuttle: The Explorer</h5>
+        <h5>Tags: Saturn, Luxury, Adventure</h5>
+        <h5>Date: 4 April - 28 March</h5>
       </div>
-</section>
+    </section>
 
-<section class="marsCon">
-    <div class="flightLeft">
+    <section class="marsCon">
+      <div class="flightLeft">
         <img
           src="../Assets/RedPlanetVentures/Assets/Images/flightUranus.png"
           height="100%"
@@ -148,24 +170,28 @@
       </div>
       <div class="flightRight">
         <h1>Uranus Uncharted</h1>
-        <h3>R 50,000.00 </h3>
+        <h3>R 50,000.00</h3>
         <h5>12 customer review</h5>
         <p>
-            Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour. Explore its icy atmosphere and captivating moons. Experience thrilling zero-gravity excursions, witness mesmerizing auroras, and immerse yourself in celestial photography workshops. With luxury
-            accommodations and expert guides, discover the wonders of Uranus in a
-            journey of a lifetime.
+          Embark on a cosmic adventure to Uranus with our "Uranus Unveiled"
+          tour. Explore its icy atmosphere and captivating moons. Experience
+          thrilling zero-gravity excursions, witness mesmerizing auroras, and
+          immerse yourself in celestial photography workshops. With luxury
+          accommodations and expert guides, discover the wonders of Uranus in a
+          journey of a lifetime.
         </p>
         <div class="buttonCon">
-            <button2>- 1 +</button2>  <button>Book Now</button></div>
-            <h5>SKU: SS735</h5>
-            <h5>Shuttle: The Endeavor </h5>
-            <h5>Tags: Uranus, Workshop, Adventure </h5>
-            <h5>Date :   16 May - 19 July</h5>
+          <button2>- 1 +</button2> <button onclick="uranusAddToCart()">Book Now</button>
+        </div>
+        <h5>SKU: SS735</h5>
+        <h5>Shuttle: The Endeavor</h5>
+        <h5>Tags: Uranus, Workshop, Adventure</h5>
+        <h5>Date : 16 May - 19 July</h5>
       </div>
-</section>
+    </section>
 
-<section class="neptuneCon">
-    <div class="flightLeft">
+    <section class="neptuneCon">
+      <div class="flightLeft">
         <img
           src="../Assets/RedPlanetVentures/Assets/Images/flightMoon.png"
           height="100%"
@@ -176,51 +202,67 @@
         <h4>R 15,000.00</h4>
         <h5>43 customer review</h5>
         <p>
-            Experience the ultimate lunar getaway with our "Moonlight Meander"
-            package. Depart Earths atmosphere aboard the "Celestial Cruiser" for a
-            short but unforgettable journey to the Moon. Enjoy lunar walks,
-            breathtaking views of Earthrise, and stargazing under the moons serene
-            glow. Immerse yourself in luxury accommodations amidst the tranquility
-            of space.
+          Experience the ultimate lunar getaway with our "Moonlight Meander"
+          package. Depart Earths atmosphere aboard the "Celestial Cruiser" for a
+          short but unforgettable journey to the Moon. Enjoy lunar walks,
+          breathtaking views of Earthrise, and stargazing under the moons serene
+          glow. Immerse yourself in luxury accommodations amidst the tranquility
+          of space.
         </p>
         <div class="buttonCon">
-            <button3>- 1 +</button3>  <button>Book Now</button></div>
-            <h5>SKU: SS451</h5>
-            <h5>Shuttle: The Voyager</h5>
-            <h5>Neptune: Moon, Commercial, Romantic </h5>
-            <h5>Date: 5 August - 12 August</h5>
+          <button3>- 1 +</button3> <button onclick="moonAddToCart()">Book Now</button>
+        </div>
+        <h5>SKU: SS451</h5>
+        <h5>Shuttle: The Voyager</h5>
+        <h5>Tags: Moon, Commercial, Romantic</h5>
+        <h5>Date: 5 August - 12 August</h5>
         <button4 class="viewCartButton">View Cart</button4>
       </div>
-</section>
+    </section>
 
-<footer>
-    <div class="footer">
+    <footer>
+      <div class="footer">
         <div class="first">
-            <img src="../Assets/RedPlanetVentures/Assets/Images/logo.png"width="260px">
-            <p>Offering unforgettable trips to
-                explore planets in our solar
-                system.</p>
+          <img
+            src="../Assets/RedPlanetVentures/Assets/Images/logo.png"
+            width="260px"
+          />
+          <p>
+            Offering unforgettable trips to explore planets in our solar system.
+          </p>
         </div>
         <div class="second">
-            <h3>company</h3>
-            <p>Home</p>
-            <p>Flights</p>
-            <p>Contact Us</p>
+          <h3>company</h3>
+          <p>Home</p>
+          <p>Flights</p>
+          <p>Contact Us</p>
         </div>
         <div class="first">
-            <h3>Social Media Links</h3>
-            <img src="../Assets/RedPlanetVentures/Assets/Images/smInstagram.png"height="100px">
-            <img src="../Assets/RedPlanetVentures/Assets/Images/smX.png"height="100px">
-            <img src="../Assets/RedPlanetVentures/Assets/Images/smTicktock.png"height="100px">
-            <img src="../Assets/RedPlanetVentures/Assets/Images/smFacebook.png"height="100px">
+          <h3>Social Media Links</h3>
+          <img
+            src="../Assets/RedPlanetVentures/Assets/Images/smInstagram.png"
+            height="100px"
+          />
+          <img
+            src="../Assets/RedPlanetVentures/Assets/Images/smX.png"
+            height="100px"
+          />
+          <img
+            src="../Assets/RedPlanetVentures/Assets/Images/smTicktock.png"
+            height="100px"
+          />
+          <img
+            src="../Assets/RedPlanetVentures/Assets/Images/smFacebook.png"
+            height="100px"
+          />
         </div>
-    </div>
-    <hr>
-    <div class="Condtions">
+      </div>
+      <hr />
+      <div class="Condtions">
         <p>All Rights Reserved @ Open Window 2024</p>
         <p>Terms & Conditions Privacy & Policy</p>
-    </div>
-</footer>
-
-</body>
+      </div>
+      <script src="../js/script.js" />
+    </footer>
+  </body>
 </html>

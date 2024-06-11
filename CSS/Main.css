@@ -349,9 +349,23 @@ padding: 15px;
 .show{
     padding-left: 900px;
 }
-/* Nav bar
-    header text
-    footer
-    contact page
-    flights page
-    filter bar 
+
+.cartModal{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+    height: 80vh;
+    background-color: #01f3fc;
+}
+
+.hideModal{
+    display: none;
+}
+
+.CartItem{
+    display: flex;
+    background-color: white;
+    padding: 15px;
+}
