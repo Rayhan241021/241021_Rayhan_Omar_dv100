@@ -64,6 +64,8 @@
                 beckon on the rust colored landscapes of the Red
                 Planet.</P>
             <button>Book Now</button>
+            <button4 onclick="OpenCartModal()" class="viewCartButton"
+          >View Cart</button4>
         </div>
     </section>
 
@@ -126,7 +128,11 @@
         </div>
         <button>Book a Trip Now</button>
       </section>
-  
+      
+      <div class="cartModal hideModal" id="cartModal">
+        <button onclick="CloseModal()">Close Modal</button>
+      </div>
+
     <footer>
         <div class="footer">
             <div class="first">
@@ -143,10 +149,10 @@
             </div>
             <div class="first">
                 <h3>Social Media Links</h3>
-                <img src="Assets/RedPlanetVentures/Assets/Images/smInstagram.png"height="100px">
-                <img src="Assets/RedPlanetVentures/Assets/Images/smX.png"height="100px">
-                <img src="Assets/RedPlanetVentures/Assets/Images/smTicktock.png"height="100px">
-                <img src="Assets/RedPlanetVentures/Assets/Images/smFacebook.png"height="100px">
+                <a href="https://www.instagram.com/openwindowinstitute?igsh=MWR4YjE4OWw5NzlsOQ=="> <img src="Assets/RedPlanetVentures/Assets/Images/smInstagram.png"height="100px">
+                <a href="https://x.com/open_window_?t=yP68AxTEpWqvpnpvaXx6Wg&s=08"><img src="Assets/RedPlanetVentures/Assets/Images/smX.png"height="100px">
+                <a href="https://www.tiktok.com/@open_window_?_t=8l8PJdd9qJK&_r=1"><img src="Assets/RedPlanetVentures/Assets/Images/smTicktock.png"height="100px">
+                <a href="https://www.facebook.com/theopenwindow/"><img src="Assets/RedPlanetVentures/Assets/Images/smFacebook.png"height="100px">
             </div>
         </div>
         <hr>
@@ -155,6 +161,6 @@
             <p>Terms & Conditions Privacy & Policy</p>
         </div>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

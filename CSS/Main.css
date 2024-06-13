@@ -24,7 +24,7 @@ nav{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: #cccece;
+        background-color: rgba(255, 255, 255, .6);
         padding: 0 2%;
         border-radius:20px;
         margin-top: 2%;
@@ -67,7 +67,7 @@ nav{
 
     .headerText{
        align-self: flex-start;
-        padding: 5%;
+        padding: 10%;
     }
 
     .HeaderText h1{
@@ -95,7 +95,7 @@ nav{
     text-align: center;
     color: white;
     font-size: 50px;
-    padding: 50px 30px;
+    padding: 2% 3%;
 }
 
 .contactHeaderCon{ background-image: url("../assets/RedPlanetVentures/Assets/Images/headerbackBack.png");
@@ -113,7 +113,7 @@ nav{
     text-align: center;
     color: white;
     font-size: 30px;
-    padding: 60px 30px;    
+    padding: 2% 3%;    
 }
 
 .FeaturedCon{
@@ -357,7 +357,7 @@ padding: 15px;
     transform: translate(-50%, 0);
     width: 70%;
     height: 80vh;
-    background-color: #01f3fc;
+    background-color: #fcffff;
 }
 
 .hideModal{

@@ -51,8 +51,7 @@
       <div class="flightLeft">
         <img
           src="../Assets/RedPlanetVentures/Assets/Images/flightMars.png"
-          height="100%"
-        />
+          height="100%"/>
       </div>
       <div class="flightRight">
         <h1>The Classic Mars Experience</h1>
@@ -99,7 +98,7 @@
         </div>
         <h5>SKU: SS405</h5>
         <h5>Shuttle: The Voyager</h5>
-        <h5>Neptune: Commercial, Gourmet Experience</h5>
+        <h5>Tags: Commercial, Gourmet Experience</h5>
         <h5>Date: 4 April - 28 March</h5>
       </div>
     </section>
@@ -216,17 +215,21 @@
         <h5>Shuttle: The Voyager</h5>
         <h5>Tags: Moon, Commercial, Romantic</h5>
         <h5>Date: 5 August - 12 August</h5>
-        <button4 class="viewCartButton">View Cart</button4>
+        <button4 onclick="OpenCartModal()" class="viewCartButton"
+          >View Cart</button4>
       </div>
     </section>
+
+    <div class="cartModal hideModal" id="cartModal">
+      <button onclick="CloseModal()">Close Modal</button>
+    </div>
 
     <footer>
       <div class="footer">
         <div class="first">
           <img
             src="../Assets/RedPlanetVentures/Assets/Images/logo.png"
-            width="260px"
-          />
+            width="260px"/>
           <p>
             Offering unforgettable trips to explore planets in our solar system.
           </p>
@@ -239,24 +242,20 @@
         </div>
         <div class="first">
           <h3>Social Media Links</h3>
-          <img
-            src="../Assets/RedPlanetVentures/Assets/Images/smInstagram.png"
-            height="100px"
-          />
-          <img
-            src="../Assets/RedPlanetVentures/Assets/Images/smX.png"
-            height="100px"
-          />
-          <img
-            src="../Assets/RedPlanetVentures/Assets/Images/smTicktock.png"
-            height="100px"
-          />
-          <img
-            src="../Assets/RedPlanetVentures/Assets/Images/smFacebook.png"
-            height="100px"
-          />
-        </div>
+          <a href="https://www.instagram.com/openwindowinstitute?igsh=MWR4YjE4OWw5NzlsOQ==">
+              <img src="../Assets/RedPlanetVentures/Assets/Images/smInstagram.png" height="100px">
+          </a>
+          <a href="https://x.com/open_window_?t=yP68AxTEpWqvpnpvaXx6Wg&s=08">
+              <img src="../Assets/RedPlanetVentures/Assets/Images/smX.png" height="100px">
+          </a>
+          <a href="https://www.tiktok.com/@open_window_?_t=8l8PJdd9qJK&_r=1">
+              <img src="../Assets/RedPlanetVentures/Assets/Images/smTicktock.png" height="100px">
+          </a>
+          <a href="https://www.facebook.com/theopenwindow/">
+              <img src="../Assets/RedPlanetVentures/Assets/Images/smFacebook.png" height="100px">
+          </a>
       </div>
+  </div>
       <hr />
       <div class="Condtions">
         <p>All Rights Reserved @ Open Window 2024</p>
