@@ -1,25 +1,10 @@
-/*document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    if (!name || !email || !message) {
-        alert('Please fill out all fields');
-    } else {
-        alert('Form submitted successfully');
-        // this functions is supposed to ensure that all fields in the contact form is filled out:  currently not working :(  
-    }
-});*/
-
-// document.document
-//   .getElementById("search")
-//   .addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     const query = document.querySelector("#search input").value;
-//     alert("You searched for: " + query);
-//     //this function will collect the info of what the user has searched for and tell them what they have searched
-//   });
+//document.getElementById("search")
+   //.addEventListener("submit", function (event) {
+   //  event.preventDefault();
+    // const query = document.querySelector("#search input").value;
+    //alert("You searched for: " + query);
+    //this function will collect the info of what the user has searched for and tell them what they have searched
+  // });
 
 //Arrays
 //Technically a list
@@ -33,8 +18,8 @@
 //object
 //properties
 //var keyboard = {
- // keys: "abc",
-  //name: "Logitech",
+// keys: "abc",
+//name: "Logitech",
 //};
 
 // var flights = [
@@ -170,67 +155,67 @@ function jupiterAddToCart() {
 }
 
 function saturnAddToCart() {
-    var cartItem = {
-      name: "Ring Around a Saturn",
-      price: 40000,
-      qta: 1,
-    };
-  
-    cartItems.push(cartItem);
-  
-    var previousValue = JSON.parse(sessionStorage.getItem("CART"));
-    //if  it is not in session then we add it
-    if (previousValue !== null) {
-      console.log(previousValue);
-      sessionStorage.setItem("CART", JSON.stringify(cartItems));
-    } else {
-      //if it is empty
-      cartItems.push(cartItem);
-      sessionStorage.setItem("CART", JSON.stringify(cartItems));
-    }
-  }
+  var cartItem = {
+    name: "Ring Around a Saturn",
+    price: 40000,
+    qta: 1,
+  };
 
-  function uranusAddToCart() {
-    var cartItem = {
-      name: "Uranus Uncharted",
-      price: 50000,
-      qta: 1,
-    };
-  
-    cartItems.push(cartItem);
-  
-    var previousValue = JSON.parse(sessionStorage.getItem("CART"));
-    //if  it is not in session then we add it
-    if (previousValue !== null) {
-      console.log(previousValue);
-      sessionStorage.setItem("CART", JSON.stringify(cartItems));
-    } else {
-      //if it is empty
-      cartItems.push(cartItem);
-      sessionStorage.setItem("CART", JSON.stringify(cartItems));
-    }
-  }
+  cartItems.push(cartItem);
 
-  function moonAddToCart() {
-    var cartItem = {
-      name: "Moonlight Meander",
-      price: 15000,
-      qta: 1,
-    };
-  
+  var previousValue = JSON.parse(sessionStorage.getItem("CART"));
+  //if  it is not in session then we add it
+  if (previousValue !== null) {
+    console.log(previousValue);
+    sessionStorage.setItem("CART", JSON.stringify(cartItems));
+  } else {
+    //if it is empty
     cartItems.push(cartItem);
-  
-    var previousValue = JSON.parse(sessionStorage.getItem("CART"));
-    //if  it is not in session then we add it
-    if (previousValue !== null) {
-      console.log(previousValue);
-      sessionStorage.setItem("CART", JSON.stringify(cartItems));
-    } else {
-      //if it is empty
-      cartItems.push(cartItem);
-      sessionStorage.setItem("CART", JSON.stringify(cartItems));
-    }
+    sessionStorage.setItem("CART", JSON.stringify(cartItems));
   }
+}
+
+function uranusAddToCart() {
+  var cartItem = {
+    name: "Uranus Uncharted",
+    price: 50000,
+    qta: 1,
+  };
+
+  cartItems.push(cartItem);
+
+  var previousValue = JSON.parse(sessionStorage.getItem("CART"));
+  //if  it is not in session then we add it
+  if (previousValue !== null) {
+    console.log(previousValue);
+    sessionStorage.setItem("CART", JSON.stringify(cartItems));
+  } else {
+    //if it is empty
+    cartItems.push(cartItem);
+    sessionStorage.setItem("CART", JSON.stringify(cartItems));
+  }
+}
+
+function moonAddToCart() {
+  var cartItem = {
+    name: "Moonlight Meander",
+    price: 15000,
+    qta: 1,
+  };
+
+  cartItems.push(cartItem);
+
+  var previousValue = JSON.parse(sessionStorage.getItem("CART"));
+  //if  it is not in session then we add it
+  if (previousValue !== null) {
+    console.log(previousValue);
+    sessionStorage.setItem("CART", JSON.stringify(cartItems));
+  } else {
+    //if it is empty
+    cartItems.push(cartItem);
+    sessionStorage.setItem("CART", JSON.stringify(cartItems));
+  }
+}
 
 // function displayFlights() {
 //   console.log("displayFlights");
@@ -284,6 +269,7 @@ function saturnAddToCart() {
 //reference id from div (assign to variable)
 //store html element in var
 var cartModal = document.getElementById("cartModal");
+var grandTotalElement = document.getElementById("grandTotal");
 
 //assigning the function to the button
 //what do we want to do inside of the function
@@ -300,13 +286,49 @@ function OpenCartModal() {
     cartModal.innerHTML += `<p>No Cart Items</p>`;
   } else {
     cartItems.forEach((item) => {
-      html += `<div class="CartItem">
+      var cartItem = `<div class="CartItem">
         <h3>${item.name}</h3>
         price: R ${item.price} QTA: ${item.qta}
+        <button onclick="removeCartItem('${item.name}')">remove</button>
       </div>`;
+
+      html += cartItem;
+
+      //values from items in cart
+      //prices into array
+      //loop through prices and add them up
+      var allPrices = cartItems.map((cartItem) => cartItem.price);
+      var total = 0;
+
+      for (let index = 0; index < allPrices.length; index++) {
+        total += allPrices[index];
+      }
+
+      // var sum = cartItems.reduce(
+      //   (accumulator, cartItem) => accumulator + cartItem.price,
+      //   0
+      // );
+      // console.log(sum);
+
+      grandTotalElement.innerText = total;
     });
     cartModal.innerHTML += html;
   }
+}
+
+function removeCartItem(name) {
+  //get all things from session storage
+  var previousValue = JSON.parse(sessionStorage.getItem("CART"));
+
+  var itemFromCartToRemove = previousValue.find(
+    (cartItem) => cartItem.name === name
+  );
+
+  const newCartItems = previousValue.filter(function (cartItem) {
+    return cartItem.name !== itemFromCartToRemove.name;
+  });
+
+  sessionStorage.setItem("CART", JSON.stringify(newCartItems));
 }
 
 //what do we want to do
@@ -317,6 +339,17 @@ function CloseModal() {
   cartModal.classList.add("hideModal");
 }
 
-// displayFlights();
+function SubmitForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
 
-//what do we want to do
+  if (name && email && subject && message) {
+    alert(
+      `Thank you ${name} for filling in your details. We will mail you at ${email}`
+    );
+  } else {
+    alert("Please fill in all the fields");
+  }
+}

@@ -183,13 +183,12 @@ button4{
     padding: 20px 0px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(129, 0, 0);
+    background-color: rgb(124, 0, 0);
     color: white;
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
 }
-
 .shuttleCon{
     display: flex;
     height: 90vh;
